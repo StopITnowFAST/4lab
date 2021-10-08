@@ -9,8 +9,6 @@ a1 = 3
 b2 = 6
 b1 = 4
 
-numA = a3 * 100 + a2 * 10 + a1
-numB = b2 * 10 + b1
-
-answer = numA + numB
-print("Число состоит из чисел: ", answer // 100, answer // 10 % 10, answer % 100 % 10)
+print(a3 + (b2 + a2 + ((a1 + b1) // 10))//10) # сотни
+print((b2 + a2 + ((a1 + b1) // 10))%10) # десятки
+print((a1 + b1) % 10) # единицы
